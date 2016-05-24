@@ -12,7 +12,7 @@ public final class DaoFabric {
     // ThreadLocal.
     private static volatile DaoFabric instance = null;
 
-    private static final String DB_HOST = "192.168.56.101";
+    private static final String DB_HOST = "db-host";
     private static final String DB_PORT = "5432";
     private static final String DB_NAME = "jee";
     private static final String DB_USER = "jee";
