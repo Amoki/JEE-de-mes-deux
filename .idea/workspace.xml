@@ -26,8 +26,8 @@
       <file leaf-file-name="RecipesControllerBean.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/RecipesControllerBean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="20" column="29" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="29" />
+            <state relative-caret-position="309">
+              <caret line="46" column="70" selection-start-line="46" selection-start-column="57" selection-end-line="46" selection-end-column="70" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#433#434#0" expanded="true" />
@@ -47,7 +47,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DaoFabric.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DaoFabric.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dao/fabric/DaoFabric.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="289">
@@ -88,28 +88,19 @@
       <file leaf-file-name="recipeSearch.xhtml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/recipeSearch.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="53" column="75" selection-start-line="53" selection-start-column="59" selection-end-line="53" selection-end-column="75" />
-              <folding>
-                <marker date="1464076625838" expanded="true" signature="365:2231" placeholder="..." />
-                <marker date="1464076625838" expanded="true" signature="394:2223" placeholder="..." />
-                <marker date="1464076625838" expanded="true" signature="417:2213" placeholder="..." />
-              </folding>
+            <state relative-caret-position="453">
+              <caret line="63" column="105" selection-start-line="63" selection-start-column="89" selection-end-line="63" selection-end-column="105" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="recipeResultList.xhtml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="recipeResultList.xhtml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/recipeResultList.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="27" column="19" selection-start-line="0" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-              <folding>
-                <marker date="1464080239411" expanded="true" signature="365:1255" placeholder="..." />
-                <marker date="1464080239411" expanded="true" signature="398:1247" placeholder="..." />
-                <marker date="1464080239411" expanded="true" signature="474:1237" placeholder="..." />
-                <marker date="1464080239411" expanded="true" signature="493:593" placeholder="..." />
-              </folding>
+            <state relative-caret-position="96">
+              <caret line="11" column="16" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="16" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -968,16 +959,16 @@
       <workItem from="1463987805963" duration="1384000" />
       <workItem from="1464003683914" duration="52000" />
       <workItem from="1464003827223" duration="11681000" />
-      <workItem from="1464070489029" duration="11548000" />
+      <workItem from="1464070489029" duration="11939000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24665000" />
+    <option name="totallyTimeSpent" value="25056000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -993,7 +984,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.49369085" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.49369085" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.50630915" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1330,30 +1321,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/RecipesControllerBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="20" column="29" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#433#434#0" expanded="true" />
-            <element signature="e#508#509#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/recipeSearch.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="53" column="75" selection-start-line="53" selection-start-column="59" selection-end-line="53" selection-end-column="75" />
-          <folding>
-            <marker date="1464076625838" expanded="true" signature="365:2231" placeholder="..." />
-            <marker date="1464076625838" expanded="true" signature="394:2223" placeholder="..." />
-            <marker date="1464076625838" expanded="true" signature="417:2213" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/dao/instance/RecipesDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="595">
@@ -1390,19 +1357,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="7" />
           <folding>
             <marker date="1464075415914" expanded="true" signature="581:612" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/recipeResultList.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="27" column="19" selection-start-line="0" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-          <folding>
-            <marker date="1464080239411" expanded="true" signature="365:1255" placeholder="..." />
-            <marker date="1464080239411" expanded="true" signature="398:1247" placeholder="..." />
-            <marker date="1464080239411" expanded="true" signature="474:1237" placeholder="..." />
-            <marker date="1464080239411" expanded="true" signature="493:593" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -1467,6 +1421,34 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="18" column="48" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/recipeSearch.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="453">
+          <caret line="63" column="105" selection-start-line="63" selection-start-column="89" selection-end-line="63" selection-end-column="105" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/RecipesControllerBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="46" column="70" selection-start-line="46" selection-start-column="57" selection-end-line="46" selection-end-column="70" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#433#434#0" expanded="true" />
+            <element signature="e#508#509#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/recipeResultList.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="11" column="16" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="16" />
           <folding />
         </state>
       </provider>
