@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+<head>
+    <title>Step 4: Recipe Form</title>
+</head>
+<body>
+<h1>Search Recipts</h1>
+<h:form >
+    <h:dataTable value="#{recipeSearchList.getRecipeList()}" var="recipe">
+        <h:column>
+            <f:facet name ="header">Title</f:facet>
+            #{recipe.title}
+        </h:column>
+        <h:column>
+            <f:facet name ="header">Type</f:facet>
+            #{recipe.type}
+        </h:column>
+        <h:column>
+            <f:facet name ="header">Description</f:facet>
+            #{recipe.description}
+        </h:column>
+        <h:column>
+            <f:facet name ="header">Expertise</f:facet>
+            #{recipe.expertise}
+        </h:column>
+        <h:column>
+            <f:facet name ="header">Duration</f:facet>
+            #{recipe.duration}
+        </h:column>
+        <h:column>
+            <f:facet name ="header">Nbpeople</f:facet>
+            #{recipe.nbpeople}
+        </h:column>
+    </h:dataTable>
+</h:form>
+</body>
+</html>
+
+
