@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="692a882f-3f7b-428c-8bee-8b41cb27e63b" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/confirm.jsp" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/display.jsp" afterPath="$PROJECT_DIR$/web/resources/display.jsp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/form.html" afterPath="$PROJECT_DIR$/web/resources/form.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/form.jsp" afterPath="$PROJECT_DIR$/web/resources/form.jsp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/recipeForm.xhtml" afterPath="$PROJECT_DIR$/web/resources/recipeForm.xhtml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/recipeResultList.xhtml" afterPath="$PROJECT_DIR$/web/resources/recipeResultList.xhtml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/recipeSearch.xhtml" afterPath="$PROJECT_DIR$/web/resources/recipeSearch.xhtml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/userDisplay.xhtml" afterPath="$PROJECT_DIR$/web/resources/userDisplay.xhtml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/userLogin.xhtml" afterPath="$PROJECT_DIR$/web/resources/userLogin.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/jdbc_war_exploded/WEB-INF/classes/dao/fabric/DaoFabric.class" afterPath="$PROJECT_DIR$/out/artifacts/jdbc_war_exploded/WEB-INF/classes/dao/fabric/DaoFabric.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/jdbc/dao/fabric/DaoFabric.class" afterPath="$PROJECT_DIR$/out/production/jdbc/dao/fabric/DaoFabric.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jdbc.iml" afterPath="$PROJECT_DIR$/jdbc.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dao/fabric/DaoFabric.java" afterPath="$PROJECT_DIR$/src/dao/fabric/DaoFabric.java" />
     </list>
     <ignored path="jdbc.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -936,12 +923,12 @@
       <workItem from="1464003683914" duration="52000" />
       <workItem from="1464003827223" duration="11681000" />
       <workItem from="1464070489029" duration="10864000" />
-      <workItem from="1464082227171" duration="3175000" />
+      <workItem from="1464082227171" duration="3257000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27156000" />
+    <option name="totallyTimeSpent" value="27238000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="0" />
