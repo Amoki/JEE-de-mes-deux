@@ -10,6 +10,7 @@
         <element id="directory" name="lib">
           <element id="library" level="project" name="postgresql-9.4.1208" />
           <element id="library" level="project" name="Mojarra-2.0.1-FCS" />
+          <element id="library" level="project" name="primefaces-5.3" />
         </element>
       </element>
     </root>
