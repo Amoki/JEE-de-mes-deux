@@ -43,6 +43,17 @@ nav ul input[type=submit] {
     height: 100%;
 }
 
+
+
+
+.ui-panelgrid {
+    width:auto;
+}
+
+.ui-panelgrid tr, .ui-panelgrid td, .ui-panelgrid th {
+    border: 1px solid black;
+}
+
 /* Not working, don't know why */
 .homebutton {
     border: none;
@@ -55,4 +66,3 @@ nav ul input[type=submit] {
     color: white;
     background-color: #008e70;
 }
-
