@@ -14,9 +14,11 @@ import java.util.Map;
 // Utilisation de application scope afin d'offrir un point d'entrée unique à l'ensemble des clients
 public class UserControllerBean {
     private UserDao userDao;
+
     public UserControllerBean() {
         this.userDao= DaoFabric.getInstance().createUserDao();
     }
+
     public String checkUser(LoginBean loginBean){
         UserModelBean user = this.userDao.checkUser(loginBean.getLogin(), loginBean.getPwd());
         if(user!=null){
@@ -45,7 +47,7 @@ public class UserControllerBean {
         }
     }
 
-    public void checkAndAddUser(UserSubmissionModelBean userSubmitted){
+    public String checkAndAddUser(UserSubmissionModelBean userSubmitted){
         this.userDao.addUser(userSubmitted);
 
         //récupère l'espace de mémoire de JSF
@@ -55,5 +57,6 @@ public class UserControllerBean {
 
         sessionMap.put("user", userSubmitted);
 
+        return "home.xhtml";
     }
 }
