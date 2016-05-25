@@ -19,18 +19,29 @@ public class UserControllerBean {
     }
     public String checkUser(LoginBean loginBean){
         UserModelBean user = this.userDao.checkUser(loginBean.getLogin(), loginBean.getPwd());
-        System.out.println(user);
-        if( user!=null){
+        if(user!=null){
             //récupère l'espace de mémoire de JSF
             ExternalContext externalContext = FacesContext.getCurrentInstance().getExternalContext();
             Map<String, Object> sessionMap = externalContext.getSessionMap();
-            //place l'utilisateur dans l'espace de mémoire de JSF
-            sessionMap.put("loggedUser", user);
+            //place la liste de recette dans l'espace de mémoire de JSF
+            sessionMap.put("user", user);
+
+            //place de l'application dans l'espace de mémoire de JSF
+            Map<String, Object> applicationMap = externalContext.getApplicationMap();
+            Object rawCounter = applicationMap.get("userCount");
+            if(rawCounter == null) {
+                applicationMap.put("userCount", 0);
+            }
+            else {
+                int counter = (Integer)rawCounter;
+                counter++;
+                applicationMap.put("userCount", counter);
+            }
             //redirect the current page
-            return "userDisplay.xhtml";
+            return "home.xhtml";
         } else{
             //redirect the current page
-            return "userLogin.xhtml";
+            return "home.xhtml";
         }
     }
 

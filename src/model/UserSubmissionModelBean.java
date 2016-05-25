@@ -15,10 +15,12 @@ import java.util.Map;
 // même propriétés que UserModelBean mais portée différente
 public class UserSubmissionModelBean extends UserModelBean{
     private UserDao userDao;
+
     public UserSubmissionModelBean() {
         this.userDao= DaoFabric.getInstance().createUserDao();
     }
     public String checkUser(SignupBean signupBean){
+        // TODO
         UserModelBean user = null; //this.userDao.checkUser(signupBean.getLogin(), signupBean.getPwd());
         System.out.println(user);
         if( user!=null){
@@ -34,4 +36,6 @@ public class UserSubmissionModelBean extends UserModelBean{
             return "signup.xhtml";
         }
     }
+
+
 }

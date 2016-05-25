@@ -14,8 +14,8 @@ main {
 
 nav ul a,
 nav .brand-logo,
-input[type=submit] {
-    color: #444;
+input[type=submit],nav ul li {
+    color: #000;
 }
 
 nav ul input[type=text],

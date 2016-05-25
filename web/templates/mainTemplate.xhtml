@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
       xml:lang="en"
       lang="en">
 <head>
@@ -8,11 +9,11 @@
     <link rel="stylesheet" href="/css/materialize.min.css" />
     <link rel="stylesheet" href="/css/custom.css" />
 </head>
-<body>
+<h:body>
 
 <header>
     <ui:insert name="header">
-        <ui:include src="../templates/header.xhtml" /> <!-- TODO mettre le html -->
+        <ui:include src="../templates/header.xhtml" />
     </ui:insert>
 </header>
 
@@ -25,11 +26,11 @@
 
 <footer>
     <ui:insert name="footer">
-        <ui:include src="../templates/footer.html" />
+        <ui:include src="../templates/footer.xhtml" />
     </ui:insert>
 </footer>
 
 <script src="/js/jquery.min.js" type="text/javascript"></script>
 <script src="/js/materialize.min.js" type="text/javascript"></script>
-</body>
+</h:body>
 </html>
