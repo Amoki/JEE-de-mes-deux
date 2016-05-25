@@ -13,7 +13,7 @@ import javax.faces.validator.ValidatorException;
 @FacesValidator("validators.LoginValidator")
 public class LoginValidator implements Validator{
 
-    private static final String LOGIN_PATTERN = "[a-zA-Z0-9-._]";
+    private static final String LOGIN_PATTERN = "[a-zA-Z0-9-._]+$";
 
     private Pattern pattern;
     private Matcher matcher;
@@ -26,7 +26,9 @@ public class LoginValidator implements Validator{
     public void validate(FacesContext context, UIComponent component,
                          Object value) throws ValidatorException {
 
+
         matcher = pattern.matcher(value.toString());
+
         if(!matcher.matches()){
 
             FacesMessage msg =

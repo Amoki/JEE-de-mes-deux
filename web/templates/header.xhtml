@@ -11,7 +11,7 @@
                 <a href="#" class="brand-logo">Logo</a>
                 <ul class="right">
                     <li>
-                        <h:outputText id="userName" rendered="#{not empty user}" value="#{user.getSurname()}"/>
+                        <h:outputText id="userName" rendered="#{not empty user}" value="#{user.getFirstname()}"/>
                     </li>
                     <li>
                         <h:outputText id="userCount" rendered="#{not empty user}" value="#{applicationScope.userCount}"/>

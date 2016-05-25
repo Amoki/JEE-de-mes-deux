@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
     <title>Step2: Display</title>
     <jsp:useBean id="myUser" scope="session" class="model.UserModelBean" />
-    <jsp:setProperty name="myUser" property="surname" />
+    <jsp:setProperty name="myUser" property="firstname" />
     <jsp:setProperty name="myUser" property="lastname"/>
     <jsp:setProperty name="myUser" property="age"/>
     <jsp:setProperty name="myUser" property="login"/>
@@ -13,7 +13,7 @@
 </head>
 <body>
 <p>
-    Current surname: <jsp:getProperty name="myUser" property="surname"/> <br>
+    Current firstname: <jsp:getProperty name="myUser" property="firstname"/> <br>
     Current name: <jsp:getProperty name="myUser" property="lastname"/> <br>
     Current age: <jsp:getProperty name="myUser" property="age"/> <br>
     Current login: <jsp:getProperty name="myUser" property="login"/> <br>

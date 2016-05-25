@@ -15,7 +15,7 @@
 <body>
 <form  action="CreateUserServlet" method="post">
     Put your name <input type="text" name="name" />
-    Put your surname <input type="text" name="surname" />
+    Put your firstname <input type="text" name="firstname" />
     Put your age <input type="number" name="age" />
     <input type="submit" value="GO!">
 </form>

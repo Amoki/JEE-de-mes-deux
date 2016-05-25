@@ -15,6 +15,7 @@ public class UserDao {
     private String dB_NAME;
     private String dB_USER;
     private String dB_PWD;
+
     public UserDao(String DB_HOST,String DB_PORT, String DB_NAME,String DB_USER,String DB_PWD) {
         dB_HOST = DB_HOST;
         dB_PORT = DB_PORT;
@@ -22,18 +23,21 @@ public class UserDao {
         dB_USER = DB_USER;
         dB_PWD = DB_PWD;
     }
+
     public void addUser(UserModelBean user) {
         // Création de la requête
         java.sql.Statement query;   try {
             // create connection
             connection = java.sql.DriverManager.getConnection("jdbc:postgresql://" + dB_HOST + ":" + dB_PORT + "/" + dB_NAME, dB_USER, dB_PWD);
 
-            PreparedStatement querySt = connection.prepareStatement("INSERT INTO \"users\" (lastname, surname, age, login, password) VALUES (?,?,?,?,?)");
-            querySt.setString((1), user.getLastname());
-            querySt.setString((2), user.getSurname());
-            querySt.setInt((3), user.getAge());
-            querySt.setString((4), user.getLogin());
-            querySt.setString((5), user.getPwd());
+            PreparedStatement querySt = connection.prepareStatement("INSERT INTO \"users\" (lastname, firstname, age, login, pwd, email) VALUES (?,?,?,?,?,?,?)");
+            querySt.setString(1, user.getLastname());
+            querySt.setString(2, user.getFirstname());
+            querySt.setInt(3, user.getAge());
+            querySt.setString(4, user.getLogin());
+            querySt.setString(5, user.getPwd());
+            querySt.setString(6, user.getEmail());
+
             // Exécution
             querySt.executeUpdate();
             querySt.close();
@@ -55,11 +59,13 @@ public class UserDao {
             java.sql.ResultSet rs = query.executeQuery("SELECT * FROM \"users\"");
             while( rs.next() ) {
                 UserModelBean u = new UserModelBean(
+                        rs.getInt("id"),
                         rs.getString("lastname"),
-                        rs.getString("surname"),
+                        rs.getString("firstname"),
                         rs.getInt("age"),
                         rs.getString("login"),
-                        rs.getString("password")
+                        rs.getString("password"),
+                        rs.getString("email")
                 );
                 userList.add(u);
             }
@@ -79,7 +85,7 @@ public class UserDao {
         try {
             // create connection
             connection = java.sql.DriverManager.getConnection("jdbc:postgresql://" + dB_HOST + ":" + dB_PORT + "/" + dB_NAME, dB_USER, dB_PWD);
-            PreparedStatement query = connection.prepareStatement("SELECT * FROM \"users\" WHERE login = ? AND password = ?");
+            PreparedStatement query = connection.prepareStatement("SELECT * FROM \"users\" WHERE login = ? AND pwd = ?");
             // Executer puis parcourir les résultats
             query.setString((1), login);
             query.setString((2), pwd);
@@ -87,11 +93,13 @@ public class UserDao {
             ResultSet rs = query.executeQuery();
             if( rs.next()) {
                 user = new UserModelBean(
+                    rs.getInt("id"),
                     rs.getString("lastname"),
-                    rs.getString("surname"),
+                    rs.getString("firstname"),
                     rs.getInt("age"),
                     rs.getString("login"),
-                    rs.getString("password")
+                    rs.getString("password"),
+                    rs.getString("email")
                 );
             }
             rs.close();

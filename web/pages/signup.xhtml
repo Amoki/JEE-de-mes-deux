@@ -11,33 +11,38 @@
     <ui:define name="commonBodyContent">
         <div>
             <h:form class="signupForm">
-                <h:outputLabel for="firstName" value="firstName" />
-                <h:inputText id="firstName" value="#{signupBean.firstName}" required="true">
+                <h:outputLabel for="firstname" value="firstname" />
+                <h:inputText id="firstname" value="#{userSubmissionModelBean.firstname}" required="true">
                     <f:validator validatorId="validators.NameValidator" />
-                </h:inputText>
-                <h:outputLabel for="lastName" value="lastName" />
-                <h:inputText id="lastName" value="#{signupBean.lastName}" required="true">
+                </h:inputText><h:message for="firstname" showDetail="true" style="color:red" />
+
+                <h:outputLabel for="lastname" value="lastname" />
+                <h:inputText id="lastname" value="#{userSubmissionModelBean.lastname}" required="true">
                     <f:validator validatorId="validators.NameValidator" />
-                </h:inputText>
+                </h:inputText><h:message for="lastname" showDetail="true" style="color:red" />
+
                 <h:outputLabel for="age" value="age" />
-                <h:inputText id="age" value="#{signupBean.age}" required="true">
+                <h:inputText id="age" value="#{userSubmissionModelBean.age}" required="true">
                     <f:validator validatorId="validators.AgeValidator" />
-                </h:inputText>
+                </h:inputText><h:message for="age" showDetail="true" style="color:red" />
+
                 <h:outputLabel for="login" value="login" />
-                <h:inputText id="login" value="#{signupBean.login}" required="true">
+                <h:inputText id="login" value="#{userSubmissionModelBean.login}" required="true">
                     <f:validator validatorId="validators.LoginValidator" />
-                </h:inputText>
+                </h:inputText><h:message for="login" showDetail="true" style="color:red" />
+
                 <h:outputLabel for="email" value="email" />
-                <h:inputText id="email" value="#{signupBean.email}" required="true">
+                <h:inputText id="email" value="#{userSubmissionModelBean.email}" required="true">
                     <f:validator validatorId="validators.EmailValidator" />
-                </h:inputText>
+                </h:inputText><h:message for="email" showDetail="true" style="color:red" />
+
                 <h:outputLabel for="pwd1" value="Password 1: *" />
-                <p:password id="pwd1" value="#{signupBean.pwd}" feedback="false" match="pwd2" label="Password 1" required="true"/>
+                <p:password id="pwd1" value="#{userSubmissionModelBean.pwd}" feedback="false" match="pwd2" label="Password 1" required="true"/>
 
                 <h:outputLabel for="pwd2" value="Password 2: *" />
-                <p:password id="pwd2" value="#{signupBean.pwdCheck}" feedback="false" label="Password 2" required="true"/>
+                <p:password id="pwd2" feedback="false" label="Password 2" required="true"/>
 
-                <h:commandButton  value="Sign up" action="#{userSubmissionModelBean.checkUser(signupBean)}" />
+                <h:commandButton  value="Sign up" action="#{userControllerBean.checkAndAddUser(userSubmissionModelBean)}" />
             </h:form>
         </div>
     </ui:define>

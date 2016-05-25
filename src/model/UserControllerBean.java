@@ -46,9 +46,14 @@ public class UserControllerBean {
     }
 
     public void checkAndAddUser(UserSubmissionModelBean userSubmitted){
-        //Vérifier les propriétés de l'utilisateur
-        // TODO
-        // ajout de l'utilisateur à la base de données
         this.userDao.addUser(userSubmitted);
+
+        //récupère l'espace de mémoire de JSF
+        ExternalContext externalContext = FacesContext.getCurrentInstance().getExternalContext();
+        Map<String, Object> sessionMap = externalContext.getSessionMap();
+        //place la liste de recette dans l'espace de mémoire de JSF
+
+        sessionMap.put("user", userSubmitted);
+
     }
 }
