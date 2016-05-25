@@ -14,11 +14,11 @@
                         <h:outputText id="userName" rendered="#{not empty user}" value="#{user.getFirstname()}"/>
                     </li>
                     <li>
-                        <h:outputText id="userCount" rendered="#{not empty user}" value="#{applicationScope.userCount}"/>
+                        <h:outputText id="userCount" rendered="#{not empty user}" value=" #{applicationScope.userCount} connected users"/>
                     </li>
                     <li>
                         <h:form id="signup" rendered="#{empty user}">
-                            <h:commandButton value="Become Member" action="/pages/signup.xhtml"/>
+                            <h:commandButton styleClass="signupbutton" value="Become Member" action="/pages/signup.xhtml"/>
                         </h:form>
                     </li>
                     <li>

@@ -42,3 +42,17 @@ nav ul input[type=submit] {
 .page-footer {
     height: 100%;
 }
+
+/* Not working, don't know why */
+.homebutton {
+    border: none;
+    color: white;
+    background-color: #008e70;
+}
+
+.signupbutton {
+    border: none;
+    color: white;
+    background-color: #008e70;
+}
+

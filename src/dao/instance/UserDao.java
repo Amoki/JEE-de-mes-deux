@@ -98,7 +98,7 @@ public class UserDao {
                     rs.getString("firstname"),
                     rs.getInt("age"),
                     rs.getString("login"),
-                    rs.getString("password"),
+                    rs.getString("pwd"),
                     rs.getString("email")
                 );
             }

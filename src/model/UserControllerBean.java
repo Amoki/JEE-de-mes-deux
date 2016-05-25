@@ -32,13 +32,14 @@ public class UserControllerBean {
             Map<String, Object> applicationMap = externalContext.getApplicationMap();
             Object rawCounter = applicationMap.get("userCount");
             if(rawCounter == null) {
-                applicationMap.put("userCount", 0);
+                applicationMap.put("userCount", 1);
             }
             else {
                 int counter = (Integer)rawCounter;
                 counter++;
                 applicationMap.put("userCount", counter);
             }
+
             //redirect the current page
             return "home.xhtml";
         } else{
@@ -56,6 +57,18 @@ public class UserControllerBean {
         //place la liste de recette dans l'espace de mémoire de JSF
 
         sessionMap.put("user", userSubmitted);
+
+        //place de l'application dans l'espace de mémoire de JSF
+        Map<String, Object> applicationMap = externalContext.getApplicationMap();
+        Object rawCounter = applicationMap.get("userCount");
+        if(rawCounter == null) {
+            applicationMap.put("userCount", 1);
+        }
+        else {
+            int counter = (Integer)rawCounter;
+            counter++;
+            applicationMap.put("userCount", counter);
+        }
 
         return "home.xhtml";
     }
