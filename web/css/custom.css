@@ -42,3 +42,11 @@ nav ul input[type=submit] {
 .page-footer {
     height: 100%;
 }
+
+.ui-panelgrid {
+    width:auto;
+}
+
+.ui-panelgrid tr, .ui-panelgrid td, .ui-panelgrid th {
+    border: 1px solid black;
+}
