@@ -1,0 +1,44 @@
+html, body {
+    margin: 0;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+nav ul a,
+nav .brand-logo,
+input[type=submit] {
+    color: #444;
+}
+
+nav ul input[type=text],
+nav ul input[type=password] {
+    width: 120px;
+    margin-right:10px;
+    color: black;
+    height: 50%;
+    padding-bottom: 0;
+}
+
+nav ul input[type=submit] {
+    margin: 22px 10px 0 0;
+}
+
+.footer-cr {
+    text-align: left;
+}
+
+.footer-logo {
+    text-align: right;
+}
+
+.page-footer {
+    height: 100%;
+}
