@@ -10,10 +10,6 @@ html, body {
     background-color: red;
 }
 
-.footer {
-    
-}
-
 .content {
     display: flex;
     flex: 1;
