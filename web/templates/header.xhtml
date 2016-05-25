@@ -2,7 +2,9 @@
         PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
       xml:lang="en"
       lang="en">
 <body>
@@ -10,6 +12,9 @@
     <div class="header">
         <div class="header__title">
             <h1>title</h1>
+        </div>
+        <div id="connectionStatus" >
+            <h:outputText id="connectionMessage" value="#{user != null ? 'Connection success'  : 'Connection failure'}"/>
         </div>
         <div class="header__loginForm">
             <h:form class="header__signup">
@@ -20,7 +25,7 @@
                 </h:inputText>
                 <h:inputSecret id="pwdfield" value="" required="true">
                 </h:inputSecret>
-                <h:commandButton value="Go" action="/pages/index.xhtml"/>
+                <h:commandButton  value="Go" action="/pages/index.xhtml"/>
             </h:form>
         </div>
     </div>

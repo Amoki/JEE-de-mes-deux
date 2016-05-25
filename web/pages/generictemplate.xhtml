@@ -1,0 +1,43 @@
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xml:lang="en" lang="en">
+<head>
+    <title>
+        <ui:insert name="title">
+            title
+        </ui:insert>
+    </title>
+    <link rel="stylesheet" href="../css/app.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+</head>
+<h:body>
+<div class="wrapper">
+    <ui:insert name="header">
+        <ui:include src="../templates/header.xhtml" />
+    </ui:insert>
+
+    <div class="content">
+        <h:form styleClass="homeform">
+            <h:commandButton styleClass="homebutton" value="Emergency" action="emergency.xhtml" />
+            <h:commandButton styleClass="homebutton" value="Recipes" action="recipes.xhtml" />
+            <h:commandButton styleClass="homebutton" value="Shop" action="shop.xhtml" />
+        </h:form>
+    </div>
+    <div id="content">
+        <ui:insert name="commonBodyContent">
+            Common Body Content.
+        </ui:insert>
+    </div>
+
+    <ui:insert name="footer">
+        <ui:include src="../templates/footer.xhtml" />
+    </ui:insert>
+</div>
+</h:body>
+</html>
