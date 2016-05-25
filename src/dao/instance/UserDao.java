@@ -30,7 +30,7 @@ public class UserDao {
             // create connection
             connection = java.sql.DriverManager.getConnection("jdbc:postgresql://" + dB_HOST + ":" + dB_PORT + "/" + dB_NAME, dB_USER, dB_PWD);
 
-            PreparedStatement querySt = connection.prepareStatement("INSERT INTO \"users\" (lastname, firstname, age, login, pwd, email) VALUES (?,?,?,?,?,?,?)");
+            PreparedStatement querySt = connection.prepareStatement("INSERT INTO \"users\" (lastname, firstname, age, login, pwd, email) VALUES (?,?,?,?,?,?)");
             querySt.setString(1, user.getLastname());
             querySt.setString(2, user.getFirstname());
             querySt.setInt(3, user.getAge());
