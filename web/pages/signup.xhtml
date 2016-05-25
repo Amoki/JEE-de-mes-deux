@@ -1,12 +1,40 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html
-        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
-    <title>Title</title>
-</head>
-<body>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui"
+                template="generictemplate.xhtml">
+    <ui:define name="title">
+        sign up
+    </ui:define>
 
-</body>
-</html>
+    <ui:define name="commonBodyContent">
+        <div>
+            <h:form class="signupForm">
+                <h:inputText id="firstName" value="#{signupBean.firstName}" required="true">
+                    <f:validator validatorId="validators.NameValidator" />
+                </h:inputText>
+                <h:inputText id="lastName" value="#{signupBean.lastName}" required="true">
+                    <f:validator validatorId="validators.NameValidator" />
+                </h:inputText>
+                <h:inputText id="age" value="#{signupBean.age}" required="true">
+                    <f:validator validatorId="validators.AgeValidator" />
+                </h:inputText>
+                <h:inputText id="login" value="#{signupBean.login}" required="true">
+                    <f:validator validatorId="validators.LoginValidator" />
+                </h:inputText>
+                <h:inputText id="email" value="#{signupBean.email}" required="true">
+                    <f:validator validatorId="validators.EmailValidator" />
+                </h:inputText>
+                <h:outputLabel for="pwd" value="Password 1: *" />
+                <p:password id="pwd" value="#{signupBean.pwd}" feedback="false" match="pwd2" label="Password 1" required="true"/>
+
+                <h:outputLabel for="pwdCheck" value="Password 2: *" />
+                <p:password id="pwdCheck" value="#{signupBean.pwdCheck}" feedback="false" label="Password 2" required="true"/>
+
+                <h:commandButton  value="Sign up" action="#{userSubmissionModelBean.checkUser(signupBean)}" />
+            </h:form>
+        </div>
+    </ui:define>
+
+</ui:composition>
