@@ -8,10 +8,12 @@ public class RecipesModel implements Serializable {
     private int expertise;
     private int nbpeople;
     private int duration;
+    private int id;
     private String type;
     public RecipesModel() {}
 
-    public RecipesModel(String title, String description, int expertise, int duration, int nbpeople, String type) {
+    public RecipesModel(int id, String title, String description, int expertise, int duration, int nbpeople, String type) {
+        this.id = id;
         this.title = title;
         this.description = description;
         this.expertise = expertise;
@@ -32,6 +34,8 @@ public class RecipesModel implements Serializable {
     public void setType(String type) {this.type = type;}
     public int getDuration() {return duration;}
     public void setDuration(int duration) {this.duration = duration; }
+    public int getId() {return id;}
+    public void setId(int duration) {this.id = id; }
 
     @Override
     public String toString() {

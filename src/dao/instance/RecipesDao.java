@@ -128,6 +128,7 @@ public class RecipesDao {
             java.sql.ResultSet rs = query.executeQuery();
             while( rs.next() ) {
                 list.addRecipeList(new RecipesModel(
+                        rs.getInt("id"),
                         rs.getString("title"),
                         rs.getString("description"),
                         rs.getInt("expertise"),
