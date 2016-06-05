@@ -10,6 +10,7 @@ import javax.faces.bean.ManagedBean;
 import javax.faces.context.ExternalContext;
 import javax.faces.context.FacesContext;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 
 @ManagedBean
@@ -44,6 +45,19 @@ public class RecipesControllerBean {
         //TODO effectuer une recherche des recettes répondant aux critères passés en
         //parametre, récupérer la liste des recettes correspondantes et demander à
         // recipeResultList.xhtml d’afficher les recettes trouvées
+
+        // Get recipe list
+        List<RecipesModel> recipes = this.recipeDao.searchRecipes(
+                recipe.getDuration(),
+                recipe.getExpertise(),
+                recipe.getNbpeople(),
+                recipe.getType());
+
+        RecipesListModelBean recipeListModelBean = new RecipesListModelBean();
+
+        for (RecipesModel r : recipes)
+            recipeListModelBean.addRecipeList(r);
+
         //récupère l'espace de mémoire de JSF
         ExternalContext externalContext = FacesContext.getCurrentInstance().getExternalContext();
         Map<String, Object> sessionMap = externalContext.getSessionMap();

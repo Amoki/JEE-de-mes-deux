@@ -4,10 +4,7 @@ import model.RecipesListModelBean;
 import model.RecipesModel;
 import model.SearchRecipeBean;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
-import java.sql.SQLRecoverableException;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -76,6 +73,37 @@ public class RecipesDao {
             e.printStackTrace();
         }
         return recipesList;
+    }
+
+    public List<RecipesModel> searchRecipes(int duration,int expertise,int nbPeople,String type){
+        List<RecipesModel> recipeModels = new ArrayList<>();
+
+        String sql = 	"select id, title, description, duration, expertise, nbPeople, type " +
+                "from recipe " +
+                "where duration <= ? and expertise <= ? and nbpeople >= ?";
+        if(type.compareTo("[ALL]") != 0) sql += " and type = ? ";
+
+        try {
+            connection = java.sql.DriverManager.getConnection("jdbc:postgresql://" + dB_HOST + ":" + dB_PORT + "/" + dB_NAME, dB_USER, dB_PWD);
+            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+
+            preparedStatement.setInt(1,duration);
+            preparedStatement.setInt(2,expertise);
+            preparedStatement.setInt(3,nbPeople);
+            if(type.compareTo("[ALL]") != 0)
+                preparedStatement.setString(4,type);
+
+            ResultSet resultSet  = preparedStatement.executeQuery();
+
+            while (resultSet.next()){
+                recipeModels.add(new RecipesModel(resultSet.getInt("id"), resultSet.getString("title"),resultSet.getString("description"),resultSet.getInt("expertise"),resultSet.getInt("nbpeople"),resultSet.getInt("duration"),resultSet.getString("type")));
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return recipeModels;
     }
 
     public RecipesListModelBean searchRecipe(RecipesModel recipe) {
