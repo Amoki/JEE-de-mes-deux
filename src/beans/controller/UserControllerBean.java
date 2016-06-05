@@ -1,4 +1,4 @@
-package controller;
+package beans.controller;
 
 import dao.fabric.DaoFabric;
 import dao.instance.UserDao;
