@@ -7,7 +7,9 @@
 
 
 <ui:composition template="/templates/mainTemplate.xhtml">
-    <ui:define name="activityTitle">Recipes</ui:define>
+    <ui:define name="title">
+        Recipes
+    </ui:define>
     <ui:define name="activityContent">
         <p:dataGrid var="recipe" value="#{recipes}" columns="3" layout="grid"
                     rows="12" paginator="true" id="recipesGrid"
