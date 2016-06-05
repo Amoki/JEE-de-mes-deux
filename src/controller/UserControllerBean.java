@@ -51,6 +51,14 @@ public class UserControllerBean {
         }
     }
 
+    public String logOut(){
+        ExternalContext externalContext = FacesContext.getCurrentInstance().getExternalContext();
+        Map<String, Object> sessionMap = externalContext.getSessionMap();
+        sessionMap.remove("user");
+
+        return "home.xhtml";
+    }
+
     public String checkAndAddUser(UserSubmissionModelBean userSubmitted){
         this.userDao.addUser(userSubmitted);
 

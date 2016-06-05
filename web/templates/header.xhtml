@@ -32,6 +32,13 @@
                             </h:commandButton>
                         </h:form>
                     </li>
+                    <li>
+                        <h:form id="logoutForm" rendered="#{not empty user}">
+                            <h:commandButton  value="logout" action="#{userControllerBean.logOut()}" >
+                                <f:ajax render="loginForm signup userName userCount validation" execute="@form" />
+                            </h:commandButton>
+                        </h:form>
+                    </li>
                 </ul>
             </div>
         </nav>
