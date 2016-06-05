@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"
+      xmlns:p="http://primefaces.org/ui">
+<head>
+    <title>Administration</title>
+</head>
+<body>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:ui="http://java.sun.com/jsf/facelets" template="/views/admin/templateAdmin.xhtml">
+    <ui:define name="title">
+        Administrator Connection
+    </ui:define>
+    <ui:define name="body">
+        <h:form>
+            <h:panelGrid columns="2" cellpadding="15" layout="block">
+                <p:outputLabel value="Login: " />
+                <p:inputText id="login" value="#{loginBean.login}" required="true" />
+                <p:outputLabel value="Password: " />
+                <p:inputText id="password" value="#{loginBean.pwd}" required="true" />
+                <h:commandButton value="GO" action="#{adminUserControlerBean.checkUser(loginBean)}"/>
+            </h:panelGrid>
+        </h:form>
+    </ui:define>
+</ui:composition>
+</body>
+</html>

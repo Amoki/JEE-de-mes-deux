@@ -1,6 +1,6 @@
 package dao.instance;
 
-import model.UserModelBean;
+import beans.UserModelBean;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

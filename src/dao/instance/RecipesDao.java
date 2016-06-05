@@ -1,10 +1,16 @@
 package dao.instance;
 
-import model.RecipesListModelBean;
+import beans.RecipesListModelBean;
 import model.RecipesModel;
-import model.SearchRecipeBean;
+import beans.SearchRecipeBean;
 
+<<<<<<< Updated upstream
 import java.sql.*;
+=======
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+>>>>>>> Stashed changes
 import java.util.ArrayList;
 import java.util.List;
 

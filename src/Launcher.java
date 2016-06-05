@@ -2,7 +2,7 @@ import dao.fabric.DaoFabric;
 import dao.instance.RecipesDao;
 import dao.instance.UserDao;
 import model.RecipesModel;
-import model.UserModelBean;
+import beans.UserModelBean;
 
 import java.util.List;
 

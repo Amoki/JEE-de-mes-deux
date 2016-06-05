@@ -2,9 +2,9 @@ package controller;
 
 import dao.fabric.DaoFabric;
 import dao.instance.UserDao;
-import model.LoginBean;
-import model.UserModelBean;
-import model.UserSubmissionModelBean;
+import beans.LoginBean;
+import beans.UserModelBean;
+import beans.UserSubmissionModelBean;
 
 import javax.faces.bean.ApplicationScoped;
 import javax.faces.bean.ManagedBean;

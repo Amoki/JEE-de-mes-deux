@@ -2,7 +2,7 @@ package controller;
 
 import dao.fabric.DaoFabric;
 import dao.instance.RecipesDao;
-import model.RecipesListModelBean;
+import beans.RecipesListModelBean;
 import model.RecipesModel;
 
 import javax.faces.bean.ApplicationScoped;

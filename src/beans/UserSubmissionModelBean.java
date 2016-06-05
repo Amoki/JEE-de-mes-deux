@@ -1,13 +1,7 @@
-package model;
-
-import dao.fabric.DaoFabric;
-import dao.instance.UserDao;
+package beans;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.RequestScoped;
-import javax.faces.context.ExternalContext;
-import javax.faces.context.FacesContext;
-import java.util.Map;
 
 @ManagedBean
 @RequestScoped

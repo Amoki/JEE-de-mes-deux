@@ -1,4 +1,6 @@
-package model;
+package beans;
+
+import model.RecipesModel;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.RequestScoped;
