@@ -7,8 +7,7 @@
 
 
 <ui:composition template="/templates/mainTemplate.xhtml">
-    <ui:define name="activityTitle">Recipes</ui:define>
-    <ui:define name="activityContent">
+    <ui:define name="commonBodyContent">
         <p:dataGrid var="recipe" value="#{recipes}" columns="3" layout="grid"
                     rows="12" paginator="true" id="recipesGrid"
                     paginatorTemplate="{CurrentPageReport}  {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}"

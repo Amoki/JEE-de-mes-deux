@@ -4,13 +4,11 @@ import beans.RecipesListModelBean;
 import model.RecipesModel;
 import beans.SearchRecipeBean;
 
-<<<<<<< Updated upstream
-import java.sql.*;
-=======
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
->>>>>>> Stashed changes
 import java.util.ArrayList;
 import java.util.List;
 
@@ -85,7 +83,7 @@ public class RecipesDao {
         List<RecipesModel> recipeModels = new ArrayList<>();
 
         String sql = 	"select id, title, description, duration, expertise, nbPeople, type " +
-                "from recipe " +
+                "from recipes " +
                 "where duration <= ? and expertise <= ? and nbpeople >= ?";
         if(type.compareTo("[ALL]") != 0) sql += " and type = ? ";
 
